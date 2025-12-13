@@ -1,12 +1,21 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist_Mono, Gaegu, Kosugi_Maru } from "next/font/google";
 import "./globals.css";
 
 import AppShell from "@/components/app-shell";
 
-const geistSans = Geist({
-	variable: "--font-geist-sans",
+const kosugiMaru = Kosugi_Maru({
+	weight: "400",
 	subsets: ["latin"],
+	variable: "--font-kosugi-maru",
+	display: "swap",
+});
+
+const gaegu = Gaegu({
+	weight: ["300", "400", "700"],
+	subsets: ["latin"],
+	variable: "--font-gaegu",
+	display: "swap",
 });
 
 const geistMono = Geist_Mono({
@@ -27,7 +36,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+				className={`${gaegu.variable} ${kosugiMaru.variable} ${geistMono.variable} antialiased`}
 			>
 				<AppShell>{children}</AppShell>
 			</body>

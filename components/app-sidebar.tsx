@@ -47,8 +47,8 @@ export function AppSidebar(props: React.ComponentProps<typeof Sidebar>) {
 			{...props}
 		>
 			<SidebarHeader>
-				<div className="px-3 py-2 text-sm font-semibold select-none cursor-default">
-					Wakimae À La Carte
+				<div className="px-3 py-2 text-xl font-bold select-none cursor-default">
+					Wakimae A La Carte
 				</div>
 			</SidebarHeader>
 
@@ -58,7 +58,7 @@ export function AppSidebar(props: React.ComponentProps<typeof Sidebar>) {
 						<SidebarMenuButton asChild isActive={pathname === "/"}>
 							<Link href="/">
 								<Home className="size-4" />
-								<span>Home</span>
+								<span className="text-lg">Home</span>
 							</Link>
 						</SidebarMenuButton>
 					</SidebarMenuItem>
@@ -72,7 +72,7 @@ export function AppSidebar(props: React.ComponentProps<typeof Sidebar>) {
 							<CollapsibleTrigger asChild>
 								<SidebarMenuButton isActive={toolsOpen}>
 									<Wrench className="size-4" />
-									<span>Tools</span>
+									<span className="text-lg">Tools</span>
 									<ChevronRight className="ml-auto size-4 transition-transform group-data-[state=open]/collapsible:rotate-90" />
 								</SidebarMenuButton>
 							</CollapsibleTrigger>

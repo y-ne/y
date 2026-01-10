@@ -1,6 +1,6 @@
 "use client";
 
-import { Bell, CreditCard, LogOut, Settings } from "lucide-react";
+import { LogOut, Settings } from "lucide-react";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
